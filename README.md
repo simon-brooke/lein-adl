@@ -18,7 +18,7 @@ or
 
 If a path to an adl file is provided, it takes precedence over the `:adl-file`
 configuration parameter, described below. The supplied value should be a file
-conforming to the [ADL 1.4.1 DTD]().
+conforming to the [ADL 1.4.1 DTD](www.journeyman.cc/adl/stable/adl/schemas/adl-1.4.1.dtd).
 
 ## Configuration
 
