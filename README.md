@@ -3,9 +3,11 @@
 A Leiningen plugin to generate Clojure source code from Application Description
 Language.
 
+[![Clojars Project](https://img.shields.io/clojars/v/lein-adl.svg)](https://clojars.org/lein-adl)
+
 ## Usage
 
-Put `[lein-adl "0.1.1"]` into the `:plugins` vector of your
+Put `[lein-adl "0.1.2"]` into the `:plugins` vector of your
 project.clj.
 
 Example usage:
