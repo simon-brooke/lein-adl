@@ -5,7 +5,7 @@ Language.
 
 ## Usage
 
-Put `[lein-adl "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
+Put `[lein-adl "0.1.1"]` into the `:plugins` vector of your
 project.clj.
 
 Example usage:
