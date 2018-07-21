@@ -1,7 +1,7 @@
 # lein-adl
 
-A Leiningen plugin to generate Clojure source code from Application Description
-Language.
+A Leiningen plugin to generate Clojure source code from [Application Description
+Language](https://github.com/simon-brooke/adl).
 
 [![Clojars Project](https://img.shields.io/clojars/v/lein-adl.svg)](https://clojars.org/lein-adl)
 
