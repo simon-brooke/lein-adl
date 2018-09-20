@@ -35,8 +35,15 @@
   argument, in which case that file will be used in preference
   to any specified in the `project.clj`."
   [project & args]
-  (let [c (:adl project)
-        config {:options (merge {:path "."} c)
+  (let [c (merge
+           ;; defaults
+           {:abstract-key-name-convention "id"
+            :help false
+            :locale (or (java.util.Locale/getDefault) "en_GB.UTF-8")
+            :path "."
+            :verbosity 0}
+           (:adl project))
+        config {:options c
                 :arguments (cond
                             (not (empty? args)) args
                             (not (nil? (:adl-file c))) (:adl-file c)
