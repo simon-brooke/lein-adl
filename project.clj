@@ -1,4 +1,4 @@
-(defproject lein-adl "0.1.4"
+(defproject lein-adl "0.1.5-SNAPSHOT"
   :description "Integrate Application Description Language into lein workflow"
   :url "https://github.com/simon-brooke/lein-adl"
   :license {:name "Eclipse Public License" ;; for compatibility with leiningen
@@ -13,7 +13,7 @@
                         ["snapshots" :clojars]]
 
   ;; `lein release` doesn't play nice with `git flow release`. Run `lein release` in the
-  ;; `develop` branch, then merge the release tag into the `master` branch.
+  ;; `develop` branch, then reset the `master` branch to the release tag.
 
   :release-tasks [["vcs" "assert-committed"]
                   ["clean"]
