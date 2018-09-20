@@ -1,4 +1,4 @@
-(defproject lein-adl "0.1.3-SNAPSHOT"
+(defproject lein-adl "0.1.3"
   :description "Integrate Application Description Language into lein workflow"
   :url "https://github.com/simon-brooke/lein-adl"
   :license {:name "Eclipse Public License" ;; for compatibility with leiningen
@@ -8,6 +8,9 @@
 
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.5"]]
+
+  :deploy-repositories [["releases" :clojars]
+                        ["snapshots" :clojars]]
 
   ;; `lein release` doesn't work with `git flow release`. To use
   ;; `lein release`, first merge `develop` into `master`, and then, in branch
