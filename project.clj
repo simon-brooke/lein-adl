@@ -21,7 +21,6 @@
                   ["codox"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["vcs" "commit"]
-                  ;; ["vcs" "tag"] -- not working, problems with secret key
                   ["uberjar"]
                   ["install"]
                   ["deploy" "clojars"]
