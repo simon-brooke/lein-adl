@@ -9,6 +9,12 @@
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.5"]]
 
+  :codox {:metadata {:doc "**TODO**: write docs"
+                     :doc/format :markdown}
+          :languages [:clojure :clojurescript]
+          :source-uri "https://github.com/simon-brooke/lein-adl/blob/master/{filepath}#L{line}"
+          :output-path "docs"}
+
   :deploy-repositories [["releases" :clojars]
                         ["snapshots" :clojars]]
 
