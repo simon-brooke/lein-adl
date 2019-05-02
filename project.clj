@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License" ;; for compatibility with leiningen
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[adl-support "0.1.4"]
-                 [adl "1.4.5"]]
+                 [adl "1.4.6-SNAPSHOT"]]
 
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.5"]]
