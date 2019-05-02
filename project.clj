@@ -1,10 +1,10 @@
-(defproject lein-adl "0.1.7-SNAPSHOT"
+(defproject lein-adl "0.1.7"
   :description "Integrate Application Description Language into lein workflow"
   :url "https://github.com/simon-brooke/lein-adl"
   :license {:name "Eclipse Public License" ;; for compatibility with leiningen
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[adl-support "0.1.4"]
-                 [adl "1.4.6-SNAPSHOT"]]
+  :dependencies [[adl-support "0.1.6"]
+                 [adl "1.4.6"]]
 
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.5"]]
