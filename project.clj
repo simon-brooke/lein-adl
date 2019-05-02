@@ -1,13 +1,19 @@
-(defproject lein-adl "0.1.6"
+(defproject lein-adl "0.1.7"
   :description "Integrate Application Description Language into lein workflow"
   :url "https://github.com/simon-brooke/lein-adl"
   :license {:name "Eclipse Public License" ;; for compatibility with leiningen
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[adl-support "0.1.4"]
-                 [adl "1.4.5"]]
+  :dependencies [[adl-support "0.1.6"]
+                 [adl "1.4.6"]]
 
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.5"]]
+
+  :codox {:metadata {:doc "**TODO**: write docs"
+                     :doc/format :markdown}
+          :languages [:clojure :clojurescript]
+          :source-uri "https://github.com/simon-brooke/lein-adl/blob/master/{filepath}#L{line}"
+          :output-path "docs"}
 
   :deploy-repositories [["releases" :clojars]
                         ["snapshots" :clojars]]
@@ -21,7 +27,6 @@
                   ["codox"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
                   ["vcs" "commit"]
-                  ;; ["vcs" "tag"] -- not working, problems with secret key
                   ["uberjar"]
                   ["install"]
                   ["deploy" "clojars"]
